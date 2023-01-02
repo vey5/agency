@@ -2,19 +2,28 @@ body {
   font-family: "Roboto", sans-serif;
 }
 header {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 49px 15px 40px 15px;
 }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+/*
 .header__logo {
   display: block;
   width: 120px;
   height: 34px;
   background-image: url(./images/logo.svg);
   background-repeat: no-repeat;
+}
+*/
+.header__content {
+    padding-top: 49px;
+    padding-bottom: 47px;
 }
 .header__list {
   display: flex;
@@ -26,37 +35,40 @@ header {
   text-decoration: none;
   font-weight: bold;
 }
+
 .main__container {
-  max-width: 1372px;
-  margin: 0 auto;
+  position: relative;
+  min-height: 512px;
 }
+
 .main {
   display: flex;
   justify-content: space-between;
-  padding-left: 120px;
 }
+
+.main__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.main__img {
-  width: 100%;
-  padding-left: 25px;
-}
+
 .main__text {
   flex-basis: 471px;
-  padding-right: 95px;
-  margin-left: -32px;
-  margin-top: 130px;
 }
+
 .main__title {
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
   width: 472px;
 }
+
 .main__desc {
   font-size: 16px;
   line-height: 1.6;
@@ -75,13 +87,14 @@ header {
 .company {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 106px;
 }
 .company__title {
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
+  margin-bottom: 17px;
 }
 .company__desc {
   font-size: 18px;
@@ -91,11 +104,11 @@ header {
   width: 336px;
 }
 .company__image {
-  display: contents;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
 }
-.amazon__img {
-  margin-top: 24px;
-}
+
 .services {
   display: flex;
   justify-content: space-between;
@@ -141,6 +154,10 @@ header {
 .card__item {
   display: flex;
   flex-flow: wrap;
+  gap: 35px;
+  margin-top: 173px;
+  
+  
 }
 .box {
   border-radius: 20px;
@@ -148,7 +165,7 @@ header {
   padding: 24px;
   padding-bottom: 31px;
 }
-.card__1 {
+.card {
   box-sizing: border-box;
   border-radius: 40px;
   border: 1px solid #f2f2f2;
@@ -158,4 +175,6 @@ header {
   width: 308px;
   padding-top: 39px;
   height: 379px;
+  
 }
+
