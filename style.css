@@ -22,8 +22,8 @@ header {
 }
 */
 .header__content {
-    padding-top: 49px;
-    padding-bottom: 47px;
+  padding-top: 49px;
+  padding-bottom: 47px;
 }
 .header__list {
   display: flex;
@@ -156,8 +156,6 @@ header {
   flex-flow: wrap;
   gap: 35px;
   margin-top: 173px;
-  
-  
 }
 .box {
   border-radius: 20px;
@@ -175,6 +173,30 @@ header {
   width: 308px;
   padding-top: 39px;
   height: 379px;
+}
+.present {
+  display: flex;
+  align-items: center;
+  margin-top: 146px;
   
 }
-
+.present__text {
+  margin-left: 119px;
+}
+.present__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+  width: 468px;
+  margin-bottom: 30px;
+}
+.present__desc {
+  width: 532px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #565656;
+}
+.present__img {
+  
+}
