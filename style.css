@@ -178,7 +178,6 @@ header {
   display: flex;
   align-items: center;
   margin-top: 146px;
-  
 }
 .present__text {
   margin-left: 119px;
@@ -198,5 +197,4 @@ header {
   color: #565656;
 }
 .present__img {
-  
 }
