@@ -196,5 +196,19 @@ header {
   line-height: 1.6;
   color: #565656;
 }
-.present__img {
+/*title и desc не поставились по центру, margin 0 auto не дает? */
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+  width: 468px;
+  text-align: center;
+}
+.desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #565656;
+  width: 588px;
+  text-align: center;
 }
