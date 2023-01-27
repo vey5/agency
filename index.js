@@ -1,25 +1,29 @@
 //1 задача (в цикле показывает все возраста)
-/*let ages = {
-    "1-17": "ребенок",
-    "18-30": "молодой",
-    "30-55": "зрелый",
-    "55-100": "дед"
-};
-for (let code in ages) {
-    console.log(ages)
-}
-*/
+// Коммент: немного неправильно сделана задача, надо переделать
+// Мб надо выводить по условию
+
+// for (let i = 0; i < 101; i++) {
+//     if (i === 200) {
+//         console.log('sheeeesh', i)
+//     }
+//  }
+
 //2 задача
 /*let arr = [1, 2, 3, 4, 5];
+коммент: сейчас все верно, но возвращается массив четных или нечетных чиел, а нужно вернуть именно true если есть четные числа
+либо вернуть false. То же самое относится к третьей задаче
 let result = arr.filter(function(elem) {
 	if (elem % 2 == 0) {
 		return true;
 	} else {
 		return false;
 	}
-});*/
+
+    return false
+});
+console.log(result)
  //2 вариант
-/*let arr = [1, 2, 3, 4, 5];
+/*let arr = [1, 2, 3, 4, 5]f;
 
 let result = arr.filter(elem => elem % 2 == 0);
 console.log(result);  выведет [2, 4] четные
@@ -32,22 +36,44 @@ console.log(result);  выведет [1, 3, 5] нечетные*/
 //4 задача
 //не понял, пропускаю
 
+// Пример
+// объявляем функцию
+// const findNumber = (input /* тут ее аргумент */) => {
+//     // тут мы работаем с аргументом
+//     // Ниже строка просто для примера
+//     const her = input.concat([101])
+
+//     // тут мы возвращаем результат
+//     return her
+// }
+
+// а тут мы взыываем функцию и записываем результат в переменную result
+// const result = findNumber([1, 2, 3, 4])
+
+// console.log(result)
 
 //5 задача
-/*let gvozd = [1,2,3,4,5];
-let ios = gvozd.reduce((sum, current) => sum + current)/gvozd.length.toFixed(1);
-console.log(ios)*/
+// коммент: решение гуд, но надо обренуть все это дело в функцию, передать в нее массив gvozd и вернуть из нее результат
+// let gvozd = [1,2,3,4,5];
+// let ios = gvozd.reduce((sum, current) => sum + current)/gvozd.length.toFixed(1);
+// console.log(ios)
 // выведет среднее арифмет
 //6 задача
-/*const dew = [1,2,3,4,5];
-dew.push(1); dew.splice(0,1);
-console.log(dew)*/
+// коммент: решение гуд, но надо обренуть все это дело в функцию, передать в нее массив gvozd и вернуть из нее результат
+// const dew = [1,2,3,4,5];
+// dew.push(1); 
+// dew.splice(0,1);
+
+// console.log(dew)
 // сначала засунул 1 элем в конец массива, затем удалил 1 элемент с начала
 //2 вариант
-/*const dew2 = [1,2,3,4,5];
-dew2.splice(dew2.length -1, 1, dew2[0]); dew2.shift();
-console.log(dew2)*/
+// const dew2 = [1,2,3,4,5];
+// dew2.splice(dew2.length -1, 1, dew2[0]); dew2.shift();
+// console.log(dew2)
 //7 задача
+// коммент: Смотри примеры выше как сделать функцию и все будет гуд
+// из функции надо вернуть строку, то есть внутри функции бежим по массиву циклом , 
+//из каждого элмента формируем нужную нам строку и собираем в новый массив(может помочь map), а потом возвращаем массив из функции
 /*let people = [{name: 'Иван', age: 23}, {name: 'Vladik', age: 27}, {name: 'Kolya', age: 35}, {name: 'Tima', age: 38}];*/
 /*function arr (people) {
     return arr;
@@ -55,17 +81,18 @@ console.log(dew2)*/
 }
 console.log(arr)*/
 //8 задача 
-/*let salaries = {
-    John: 100,
-    Ann: 160,
-    Pete: 130
-  }
-  let sum = 0;
-  for ( let key in salaries ) {
-    sum += salaries[key];
-
-  }
-console.log(sum)*/
+// коммент: попробовать решить самостоятельно и понять как что работает
+// за основу можно взять решение которое уже есть ниже, просто чутка переделать для наглядности
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+//   }
+//   let sum = 0;
+//   for ( let key in salaries ) {
+//     sum += salaries[key];
+//   }
+// console.log(sum)
 //9 задача
 //есть решение, решил оставить его
 
