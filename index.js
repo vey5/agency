@@ -17,7 +17,7 @@
 //коммент: сейчас все верно, но возвращается массив четных или нечетных чиел, а нужно вернуть именно true если есть четные числа
 //либо вернуть false. То же самое относится к третьей задаче
 
-/*function arrow (element) {
+/*const arrow = (element) => {
  
     if (element % 2 !== 0) {
         return true;
@@ -31,7 +31,7 @@ const result = arrow([1, 2, 3, 4, 5,])
 console.log(result)*/
  
 //3 задача
-/*function arrow (element) {
+/*const arrow = (element) => {
  
     if (element % 2 === 0) {
         return true;
@@ -171,10 +171,47 @@ console.log(menu)*/
 
 console.log(checkPalindrome('racecar'))*/
 //12 задача fizzbuzz - непростая задача
-/*const fizzbuzz = num => {
-  for(let i = 1; i <= num; i++) {
+// вроде все получилось тут, но не могу вывести результат в консоль
+  const fizzBuzz = (num) => {
+    for(let i = 1; i <= 5; i++) {
 
+      const result = '';
+      if ( num % 3 == 0 ) {
+          result += 'fizz';
+      }
+      if ( num % 5 == 0 ) {
+          result += 'buzz';
+      }
+      return result
+    }
+}
+
+console.log()
+
+//13 задача - анаграмма, сложная задача, пропустил
+
+
+//14 задача - поиск гласных
+/*const findVowels = (hello) => {
+ const str = 'aeiou'
+ const count = 0
+ for(const x = 0; x < hello.length; x++) {
+   if (str.indexOf(hello[x]) !== -1) {
+     count++
+   }
+ }
+  return count
+}
+
+console.log(findVowels('hello'))*/
+//15 задача - фибоначчи
+/*const fibonacci = (num) => {
+  const result =[0, 1]
+  for ( const i = 2; i <= num; i++) {
+    const prevnum1 = result[i - 1]
+    const prevnum2 = result[i - 2]
+    result.push(prevnum1 + prevnum2)//через пуш num1 и num2 складываются и добавляются в конец массива
   }
-
-}*/
-    
+  return result[num]
+}
+console.log(fibonacci[num])// снова не могу вывести результат в консоль*/
