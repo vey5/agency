@@ -204,6 +204,7 @@ console.log()
 }
 
 console.log(findVowels('hello'))*/
+// а результата в консоль нема, не понимаю, почему не выводится и где ошибку допустил
 //15 задача - фибоначчи
 /*const fibonacci = (num) => {
   const result =[0, 1]
@@ -214,4 +215,5 @@ console.log(findVowels('hello'))*/
   }
   return result[num]
 }
-console.log(fibonacci[num])// снова не могу вывести результат в консоль*/
+console.log(fibonacci[num])*/
+//Снова не могу вывести результат в консоль
