@@ -172,7 +172,7 @@ console.log(menu)*/
 console.log(checkPalindrome('racecar'))*/
 //12 задача fizzbuzz - непростая задача
 // вроде все получилось тут, но не могу вывести результат в консоль
-  const fizzBuzz = (num) => {
+  /*const fizzBuzz = (num) => {
     for(let i = 1; i <= 5; i++) {
 
       const result = '';
@@ -186,7 +186,7 @@ console.log(checkPalindrome('racecar'))*/
     }
 }
 
-console.log()
+console.log()*/
 
 //13 задача - анаграмма, сложная задача, пропустил
 
@@ -213,7 +213,7 @@ console.log(findVowels('hello'))*/
     const prevnum2 = result[i - 2]
     result.push(prevnum1 + prevnum2)//через пуш num1 и num2 складываются и добавляются в конец массива
   }
-  return result[num]
+  return result(num)
 }
-console.log(fibonacci[num])*/
-//Снова не могу вывести результат в консоль
+console.log(fibonacci(num))
+//Снова не могу вывести результат в консоль*/
