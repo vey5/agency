@@ -1,103 +1,80 @@
 //1 задача (в цикле показывает все возраста)
-// Коммент: немного неправильно сделана задача, надо переделать
-// Мб надо выводить по условию
+// Коммент: тут надо еще вывести если более 30 лет, то дед
 
- /*for (let i = 0; i < 101; i++) {
-     if (i > 0 && i <= 17)   {
-       console.log('ребенок')
-       }
-       if ( i > 17 && i <= 30) {
-       console.log('молодой')
-     }
-         
-    //хз кароче, в цикле заданы условия, но вычитает 2 значение возвраста из 1 
-  }*/
+//  for (let i = 0; i < 101; i++) {
+//      if (i > 0 && i <= 17)   {
+//        console.log('ребенок')
+//        }
+//        if ( i > 17 && i <= 30) {
+//        console.log('молодой')
+//      }
+// 		}
+
+  
   
 //2 задача
-//коммент: сейчас все верно, но возвращается массив четных или нечетных чиел, а нужно вернуть именно true если есть четные числа
-//либо вернуть false. То же самое относится к третьей задаче
+// Коммент: тут у тебя есть ошибка. Ты передаешь в функцию массив в аргумент element
+// И потом весь массив element проверяешь element % 2 !== 0
+// А нужно пройтись по каждому элементу массива циклом (например forEach) и проверить на каждом элементе четный он или нет
+// Если хотя бы один элемент в массиве окажется четным, тогда возвращаем true из функции, в противном случае false
 
-/*const arrow = (element) => {
+// const arrow = (element) => {
  
-    if (element % 2 !== 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
-const arr = [1, 2, 3, 4, 5,];
-const result = arrow([1, 2, 3, 4, 5,])
+//     if (element % 2 !== 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// const arr = [1, 2, 3, 4, 5,];
+// const result = arrow([1, 2, 3, 4, 5,])
 
-console.log(result)*/
+// console.log(result)
  
 //3 задача
-/*const arrow = (element) => {
+// Коммент: здесь все то же самое как в пред задаче в плане цикла
+// const arrow = (element) => {
  
-    if (element % 2 === 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
-const arr = [1, 2, 3, 4, 5,];
-const result = arrow([1, 2, 3, 4, 5,])
+//     if (element % 2 === 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// const arr = [1, 2, 3, 4, 5,];
+// const result = arrow([1, 2, 3, 4, 5,])
 
-console.log(result)*/
+// console.log(result)
 
 //4 задача
-//не понял, пропускаю
-
-// Пример
-// объявляем функцию
-// const findNumber = (input /* тут ее аргумент */) => {
-//     // тут мы работаем с аргументом
-//     // Ниже строка просто для примера
-//     const her = input.concat([101])
-
-//     // тут мы возвращаем результат
-//     return her
-// }
-
-// а тут мы взыываем функцию и записываем результат в переменную result
-// const result = findNumber([1, 2, 3, 4])
-// кратно 5 вернул новый массив
-// console.log(result)
-/*const findNumber = (numeric) => {
-      const her = numeric.filter(numeric => numeric % 5 == 0 )
-      return her
-}
-    numeric = [1,2,5,12,15,21];
-    const result = findNumber([1,2,5,12,15,21])
-console.log(result)*/
+// Коммент: задача почти такая же как 3, мы идем циклом по массиву и проверяем кратно ли число 5, если проверка даст true
+// То собираем такие элементы в массив результатов внутри функции и в конце возвращаем этот массив функции
+// Соответственно при вызове у нас вернется либо массив с кратными числами, либо пустой массив, если ничего не нашлось в массиве, который мы передали в аргумент при вызове
 
 //5 задача
-// коммент: решение гуд, но надо обренуть все это дело в функцию, передать в нее массив gvozd и вернуть из нее результат
-// среднее арифмет вывел функцией)
-// let gvozd = [1,2,3,4,5];
-// let ios = gvozd.reduce((sum, current) => sum + current)/gvozd.length.toFixed(1);
-// console.log(ios)
-/*const findNumba = (gvozd) => {
-  const her =  gvozd.reduce((sum, current) => sum + current)/gvozd.length.toFixed(1);
-  return her
+// Коммент: тут все норм
+// const findNumba = (gvozd) => {
+//   const her =  gvozd.reduce((sum, current) => sum + current)/gvozd.length.toFixed(1);
+//   return her
     
-}
-gvozd = [1,2,3,4,5]
-const result = findNumba([1 ,2 ,3 ,4 ,5])
-console.log(result)*/
+// }
+// gvozd = [1,2,3,4,5]
+// const result = findNumba([1 ,2 ,3 ,4 ,5])
+// console.log(result)
+
+
 //6 задача
-// коммент: решение гуд, но надо обренуть все это дело в функцию, передать в нее массив gvozd и вернуть из нее результат
-// const dew = [1,2,3,4,5];
-// добавилось число в конец массива, но сам массив с изменениями не вернулся
+// Коммент: тут все норм
 
- /*const findZumba = (dew) => {
+//  const findZumba = (dew) => {
 
-    dew.push(1); dew.splice (0, 1)
+//     dew.push(1); dew.splice (0, 1)
  
- return dew
- }
+//  return dew
+//  }
 
- console.log(findZumba([1, 2, 3, 4, 5]))
-  dew = [1,2,3,4,5];*/
+//  console.log(findZumba([1, 2, 3, 4, 5]))
+//   dew = [1,2,3,4,5];
 //  const result = findZumba([1,2,3,4,5])
 //  console.log(result)
 // console.log(dew)
@@ -113,19 +90,22 @@ console.log(result)*/
  console.log(result)*/
 
 //7 задача
-// коммент: Смотри примеры выше как сделать функцию и все будет гуд
-// из функции надо вернуть строку, то есть внутри функции бежим по массиву циклом , 
-//из каждого элмента формируем нужную нам строку и собираем в новый массив(может помочь map), а потом возвращаем массив из функции
- /*const peoples = [{name: 'Иван', age: 23}, {name: 'Vladik', age: 27}, {name: 'Kolya', age: 35}, {name: 'Tima', age: 38}];
-const findPeoples = (peoples) => {
- for( let i = 0; i < peoples.length; i++)
- peoples.map( )
+// Коммент: Тут нема решения, в консоль лог вовзращается само тело функции вместо ее результата
+// Внутри самой функции тоже не совсем то что надо
+// Я предлагаю пройтись по массиву из аргумента мапом и внутри мапа обработать каждый элемент, так чтобы он превратился из объекта в строку
 
- return peoples
+//  const peoples = [{name: 'Иван', age: 23}, {name: 'Vladik', age: 27}, {name: 'Kolya', age: 35}, {name: 'Tima', age: 38}];
+//   const findPeoples = (peoples) => {
+//     for( let i = 0; i < peoples.length; i++)
+//     peoples.map( )
+
+//     return peoples
 
 
-}
-console.log(findPeoples)*/
+// }
+// console.log(findPeoples)
+
+
 //8 задача 
 // коммент: попробовать решить самостоятельно и понять как что работает
 // за основу можно взять решение которое уже есть ниже, просто чутка переделать для наглядности
