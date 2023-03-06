@@ -1,15 +1,20 @@
 //1 задача (в цикле показывает все возраста)
 // Коммент: тут надо еще вывести если более 30 лет, то дед
-
-//  for (let i = 0; i < 101; i++) {
-//      if (i > 0 && i <= 17)   {
-//        console.log('ребенок')
-//        }
-//        if ( i > 17 && i <= 30) {
-//        console.log('молодой')
-//      }
-// 		}
-
+  /*for (let i = 0; i < 101; i++) {
+      if (i > 0 && i <= 17)   {
+        console.log('ребенок')
+        }
+       if ( i > 17 && i <= 30) {
+       console.log('молодой')
+      }
+      if (i > 30 && i <= 55) {
+       console.log('зрелый')
+      }
+      if (i > 55 && i <= 101) {
+       console.log('дед')
+      }
+		}*/
+// тут разобрался
   
   
 //2 задача
@@ -18,19 +23,26 @@
 // А нужно пройтись по каждому элементу массива циклом (например forEach) и проверить на каждом элементе четный он или нет
 // Если хотя бы один элемент в массиве окажется четным, тогда возвращаем true из функции, в противном случае false
 
-// const arrow = (element) => {
- 
-//     if (element % 2 !== 0) {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-// const arr = [1, 2, 3, 4, 5,];
-// const result = arrow([1, 2, 3, 4, 5,])
+ /*const arrow = (arr) => {
+    const result = []
+    const score = arr.forEach(function(elem)  {
+         
+        if (elem % 2 === 0) {
+           
+        }
+          else if (elem % 2 !== 0) {
+            
+          }
+          return result
+          
+        })
+        return score
+ }
+   const arr = [1, 2, 3, 4, 5,];
+   
 
-// console.log(result)
- 
+console.log(arrow(arr))*/
+  
 //3 задача
 // Коммент: здесь все то же самое как в пред задаче в плане цикла
 // const arrow = (element) => {
@@ -94,17 +106,21 @@
 // Внутри самой функции тоже не совсем то что надо
 // Я предлагаю пройтись по массиву из аргумента мапом и внутри мапа обработать каждый элемент, так чтобы он превратился из объекта в строку
 
-//  const peoples = [{name: 'Иван', age: 23}, {name: 'Vladik', age: 27}, {name: 'Kolya', age: 35}, {name: 'Tima', age: 38}];
-//   const findPeoples = (peoples) => {
-//     for( let i = 0; i < peoples.length; i++)
-//     peoples.map( )
-
-//     return peoples
-
-
-// }
-// console.log(findPeoples)
-
+  /*const peoples = [{name: 'Иван', age: 23}, {name: 'Vladik', age: 27}, {name: 'Kolya', age: 35}, {name: 'Tima', age: 38}];
+   const findPeoples = (peoples) => {
+     const newPeople = peoples.map(function(item) {
+       const result = `name: ${item.name}, age: ${item.age}`
+         //const result = item.name + item.age
+      return result
+    })
+    return newPeople
+   }
+  console.log(findPeoples(peoples))*/
+   // Здесь таки все понял наконец-то, func стрелка, в теле взял параметр из массива, добавил к нему
+   //map, записал в новую переменную результат выполнения коллбэк func, затем
+   //преобразовал итемы массива в строку, записал все в новую переменную, чтобы return
+   // вернул результат в нее и в конце сделал return из самой func,
+   // ну и вызвал func в консоли
 
 //8 задача 
 // коммент: попробовать решить самостоятельно и понять как что работает
@@ -151,49 +167,77 @@ console.log(menu)*/
 
 console.log(checkPalindrome('racecar'))*/
 //12 задача fizzbuzz - непростая задача
-// вроде все получилось тут, но не могу вывести результат в консоль
+// все работает, ток fizzBuzz вместо 3 и 5 не идет, а как в примере работает, на 15 числах fizzBuzz идет
   /*const fizzBuzz = (num) => {
-    for(let i = 1; i <= 5; i++) {
-
-      const result = '';
-      if ( num % 3 == 0 ) {
-          result += 'fizz';
+    for(let i = 1; i <= num; i++) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        console.log('fizzBuzz')
       }
-      if ( num % 5 == 0 ) {
-          result += 'buzz';
+      else if (i % 3 === 0) {
+        console.log('fizz')
+       }
+      else if (i % 5 === 0) {
+          console.log('Buzz')
+        } else {
+          console.log(i)
+        }
       }
-      return result
     }
-}
+        fizzBuzz(15);*/
+        //Неудачная попытка
+        /*const fizzBuzz = (num) => {
+          let result = '';
+          for (let i = 1; i <= num; i++) {
 
-console.log()*/
+            if ( num % 3 == 0 ) {
+                result += 'fizz';
+            }
+            if ( num % 5 == 0 ) {
+                result += 'buzz';
+            }
+          }
+          return result || num
+        }
+        console.log(fizzBuzz(10))*/
+
 
 //13 задача - анаграмма, сложная задача, пропустил
-
-
+// такое вот решение, без объекта и циклов, выглядит проще
+/*const anagramm = (str1, str2) =>  {
+ const str1Strik = str1.replace(/[^\w\s]|_/g, "").toLowerCase().split('').sort().join('')
+ const str2Strik = str2.replace(/[^\w\s]|_/g, "").toLowerCase().split('').sort().join('')
+// реплейс убираются спец символы, преобразуется все в нижний регистр, разбив букв в массив, обычная сортировка
+// и все обратно соединяется джойном
+ return str1Strik === str2Strik // а тут сравниваются две строки
+}
+ console.log(anagramm('finder', 'friend')) // и если это анаграмма, то true
+ console.log(anagramm('hello', 'bye')) // соо-но если нет, то false*/
+ 
 //14 задача - поиск гласных
-/*const findVowels = (hello) => {
- const str = 'aeiou'
- const count = 0
- for(const x = 0; x < hello.length; x++) {
-   if (str.indexOf(hello[x]) !== -1) {
-     count++
+/*const findVowels = (str) => {
+  let count = 0
+ const vowels = ['a', 'e', 'i', 'o', 'u']
+ for(let char of str.toLowerCase()) {//проход циклом по массиву и преобразование в нижний регистр
+   if (vowels.includes(char)) {// методом инклюдс поиск нужного элемента, т.е гласной, если она есть в массиве,
+    // то будет true
+     count+= 1
    }
  }
   return count
 }
 
-console.log(findVowels('hello'))*/
-// а результата в консоль нема, не понимаю, почему не выводится и где ошибку допустил
-//15 задача - фибоначчи
+console.log(findVowels('hello'))
+console.log(findVowels('why'))*/
+//
+//15 задача - фибоначчи, сложная задача достаточно
 /*const fibonacci = (num) => {
-  const result =[0, 1]
-  for ( const i = 2; i <= num; i++) {
-    const prevnum1 = result[i - 1]
-    const prevnum2 = result[i - 2]
-    result.push(prevnum1 + prevnum2)//через пуш num1 и num2 складываются и добавляются в конец массива
-  }
-  return result(num)
+  const fib = []
+  for (let i = 0; i < num; i++) {
+     if (i === 0) fib[i] = 1
+     else if (i === 1) fib[i] = 2
+     else fib[i] = fib[i-2] + fib[i-1]
+     }
+     return fib
 }
-console.log(fibonacci(num))
-//Снова не могу вывести результат в консоль*/
+console.log(fibonacci(10))
+//крч такое вот решение есть, по идее можно еще как-то решить, но тут я хз уже*/
