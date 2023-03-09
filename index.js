@@ -23,46 +23,64 @@
 // А нужно пройтись по каждому элементу массива циклом (например forEach) и проверить на каждом элементе четный он или нет
 // Если хотя бы один элемент в массиве окажется четным, тогда возвращаем true из функции, в противном случае false
 
+
  /*const arrow = (arr) => {
-    const result = []
-    const score = arr.forEach(function(elem)  {
+    const result = each
+   arr.forEach(function(elem, each)  {
          
-        if (elem % 2 === 0) {
-           
+        if ( elem % 2 === 0) {
+           return true === each
         }
-          else if (elem % 2 !== 0) {
-            
-          }
-          return result
-          
+         else {
+           return false === each
+         }
+
         })
-        return score
+        return result
  }
    const arr = [1, 2, 3, 4, 5,];
    
 
 console.log(arrow(arr))*/
-  
+//const arr = [1, 2, 3, 4, 5]
+
+//const arrow = (arr) => {
+  //const findResult = arr.every(function(elem) {
+   //const result = elem % 2 === 0
+    //return result
+  //})
+  //return findResult
+//}
+ // console.log(arrow(arr))
+ // прогоняется массив через метод every и в коллбэк функции проводится сравнение на четность в массиве
+ // возвращает false, т.к в массиве есть нечетные числа
 //3 задача
 // Коммент: здесь все то же самое как в пред задаче в плане цикла
-// const arrow = (element) => {
- 
-//     if (element % 2 === 0) {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-// const arr = [1, 2, 3, 4, 5,];
-// const result = arrow([1, 2, 3, 4, 5,])
-
-// console.log(result)
-
+ /*const arrow = (arr) => {
+  const findRes = arr.some(function(elem) {
+   const result2 = elem % 2 === 0
+   return result2
+  })
+   return findRes
+ }
+ console.log(arrow(arr))*/
+// здесь тоже самое как и в предыдущей, только методом some, возвращается из функции true
+// т.к есть четные числа в массиве
 //4 задача
 // Коммент: задача почти такая же как 3, мы идем циклом по массиву и проверяем кратно ли число 5, если проверка даст true
 // То собираем такие элементы в массив результатов внутри функции и в конце возвращаем этот массив функции
 // Соответственно при вызове у нас вернется либо массив с кратными числами, либо пустой массив, если ничего не нашлось в массиве, который мы передали в аргумент при вызове
-
+/*array = [1,2,5,12,15,21]
+ const findValue = (array) => {
+  const findZvon = array.filter(function(elem) {
+   const res = elem % 5 === 0
+   return res
+  })
+   return findZvon
+ }
+ console.log(findValue(array))*/
+ // прогоняюю массив через метод filter, проверка дает true, т.к кратные элементы 5 есть в массиве,
+ // и возвращаю новый массив с результатами
 //5 задача
 // Коммент: тут все норм
 // const findNumba = (gvozd) => {
@@ -136,7 +154,8 @@ console.log(arrow(arr))*/
    }
  console.log(sum)*/
 //9 задача
-// значение объекта помножились на 2, только тайтл ушел в NaN)
+// сделал условие для проверки typeof на число, умножил числа в обжекте на 2 и вернул результат, хотя по условию задачи 
+//return не должно быть тут, но результат получился
 /*const menu = {
   width: 200,
   height: 300,
@@ -144,28 +163,32 @@ console.log(arrow(arr))*/
 }
 const multiplyNumeric = (menu) => {
   for( const key in menu) {
-    typeof menu[key] == 'number'
-    menu[key] *= 2
+   if (typeof(menu[key]) === 'number') {
+     
+     menu[key] *= 2
+   }
 
   }
-
+ return menu
 }
-multiplyNumeric(menu)
-console.log(menu)*/
+
+console.log(multiplyNumeric(menu))*/
 //10 задача - пропускаю пока, сложно
 //11 задача палиндром
 // не понимаю, как расписать, разворот reverse сделал бы
 // разобрался более менее, строку преобразовал в нижний регистр, чтобы сто пудово ее повернуть,
 // сплитом преобразовал в массив строку, потом повернул реверсом и соединил результат джойном обратно в строку
 // возврат строки сравнив ее с исходной, получил true, попробовал table поставить, получил false.
-/*const checkPalindrome = (racecar) => {
- const str = racecar.toLowerCase()
+// исправил параметр функции
+/*const checkPalindrome = (value) => {
+ const str = value.toLowerCase()
   return str === str.split('').reverse().join('');
  
   
 }
 
-console.log(checkPalindrome('racecar'))*/
+console.log(checkPalindrome('racecar'))
+console.log(checkPalindrome('table'))*/
 //12 задача fizzbuzz - непростая задача
 // все работает, ток fizzBuzz вместо 3 и 5 не идет, а как в примере работает, на 15 числах fizzBuzz идет
   /*const fizzBuzz = (num) => {
@@ -203,24 +226,27 @@ console.log(checkPalindrome('racecar'))*/
 
 //13 задача - анаграмма, сложная задача, пропустил
 // такое вот решение, без объекта и циклов, выглядит проще
-/*const anagramm = (str1, str2) =>  {
+ /*const anagramm = (str1, str2) =>  { //функция принимает 2 строки, str1, str2
  const str1Strik = str1.replace(/[^\w\s]|_/g, "").toLowerCase().split('').sort().join('')
  const str2Strik = str2.replace(/[^\w\s]|_/g, "").toLowerCase().split('').sort().join('')
-// реплейс убираются спец символы, преобразуется все в нижний регистр, разбив букв в массив, обычная сортировка
-// и все обратно соединяется джойном
- return str1Strik === str2Strik // а тут сравниваются две строки
+//создал переменную, в которую записываю действия с str1, replace убирает все не символы и строки и возвращает новую строку,
+//привел через toLowerCase все буквы в строке в нижний регистр, чтобы они не учитывались при сравнении,
+//разбил строку на буквы split и добавил в массив, затем sort сортирует количество букв в строке
+//и join соединяет обратно все буквы массива в строку
+// все вышеописанное проводится и со str2
+ return str1Strik === str2Strik //возврат и сравнение двух строк между собой
 }
  console.log(anagramm('finder', 'friend')) // и если это анаграмма, то true
  console.log(anagramm('hello', 'bye')) // соо-но если нет, то false*/
  
 //14 задача - поиск гласных
 /*const findVowels = (str) => {
-  let count = 0
- const vowels = ['a', 'e', 'i', 'o', 'u']
+  let count = 0// переменная со счетчиком
+ const vowels = ['a', 'e', 'i', 'o', 'u']// создал массив гласных букв
  for(let char of str.toLowerCase()) {//проход циклом по массиву и преобразование в нижний регистр
-   if (vowels.includes(char)) {// методом инклюдс поиск нужного элемента, т.е гласной, если она есть в массиве,
+   if (vowels.includes(char)) {// методом инклюдс в условии поиск нужного элемента, т.е гласной, если она есть в массиве,
     // то будет true
-     count+= 1
+     count+= 1// счетчик складывает проверяет каждую букву массива
    }
  }
   return count
@@ -240,4 +266,4 @@ console.log(findVowels('why'))*/
      return fib
 }
 console.log(fibonacci(10))
-//крч такое вот решение есть, по идее можно еще как-то решить, но тут я хз уже*/
+//крч такое вот решение есть, можно еще решить через обжект, но так лучше выглядит*/
