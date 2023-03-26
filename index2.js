@@ -24,7 +24,7 @@ ladder.down()//2
 ladder.showStep()//1*/
  //2 задача - найти числа, которые делятся на заданное число
  // вроде все правильно, но divisor is not defined, пока оставляю
- /*numbers = [1, 2, 3, 4, 5, 6]
+ numbers = ([1, 2, 3, 4, 5, 6])
  const findDivisibleBy = (numbers, divisor) => {
   const divisibleBy = numbers.filter(function(number) {
    const div = number % divisor  === 0
@@ -32,10 +32,10 @@ ladder.showStep()//1*/
   })
   return divisibleBy
  }
- console.log(findDivisibleBy(numbers, divisor))*/
+ console.log(findDivisibleBy([1, 2, 3, 4, 5, 6], 2))
  //3 задача - посчитать нечетные числа ниже n 
- const oddCount = (n) => {
+ /*const oddCount = (n) => {
   const odd = (n-1) / 2
   return odd
  }
- console.log(oddCount(15))
+ console.log(oddCount(15))*/
