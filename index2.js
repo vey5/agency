@@ -23,8 +23,8 @@ ladder.showStep()//2
 ladder.down()//2
 ladder.showStep()//1*/
  //2 задача - найти числа, которые делятся на заданное число
- // вроде все правильно, но divisor is not defined, пока оставляю
- numbers = ([1, 2, 3, 4, 5, 6])
+ // разобрался с решением, возращает массив с нужными значениями
+ /*numbers = ([1, 2, 3, 4, 5, 6])
  const findDivisibleBy = (numbers, divisor) => {
   const divisibleBy = numbers.filter(function(number) {
    const div = number % divisor  === 0
@@ -32,10 +32,29 @@ ladder.showStep()//1*/
   })
   return divisibleBy
  }
- console.log(findDivisibleBy([1, 2, 3, 4, 5, 6], 2))
- //3 задача - посчитать нечетные числа ниже n 
+ console.log(findDivisibleBy([1, 2, 3, 4, 5, 6], 2))*/
+ //3 задача - Подсчитать, сколько лет назад отец был вдвое старше сына (или через сколько лет он будет вдвое старше).
+ // через метом math.abs - модуль числа, возвращает из отрицательного числа в положительное
+ /*const twiceAsOld = (dadYearsOld, sonYearsOld) => {
+    const twice = Math.abs(sonYearsOld * 2 - dadYearsOld)
+    return twice
+ }
+ console.log(twiceAsOld(36, 7))*/
+ //4 задача - посчитать нечетные числа ниже n 
+ // нечетное число выводится, не выводятся только до заданного числа нечетные
  /*const oddCount = (n) => {
-  const odd = (n-1) / 2
+  const odd = Math.round((n / 2) - 1)
   return odd
  }
- console.log(oddCount(15))*/
+ console.log(oddCount(15))
+ console.log(oddCount(7))*/
+ // 5 задача - преобразовать строку в число
+ // функцией number(value) преобразовал к числу строку
+ const stringToNumber = (str) => {
+    const num = Number(str)
+    return num
+ }
+ console.log(stringToNumber('1234'))
+ console.log(stringToNumber('605'))
+ console.log(stringToNumber('405'))
+ console.log(stringToNumber('-7'))
