@@ -1,10 +1,18 @@
 .conteiner {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 body {
   font-family: "Roboto", sans-serif;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #091133;
+  width: 540px;
 }
 .heder {
   max-width: 1120px;
@@ -107,5 +115,86 @@ body {
 }
 .mein__img {
   position: absolute;
+}
+.present {
+  display: flex;
+  margin-top: 160px;
+  gap: 30px;
+  margin-left: 30px;
+}
+.present__desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6f7cb2;
+  width: 539px;
+}
+.present__desc2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6f7cb2;
+  width: 539px;
+}
+.present__list {
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
+  gap: 30px;
+  margin-top: 80px;
+}
+.present__icon1 {
+  width: 36px;
+  margin-bottom: 14px;
+}
+.present__icon2 {
+  margin-bottom: 14px;
+}
+
+.present__item {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #5d6970;
+  width: 255px;
+}
+.present__span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #091133;
+  display: block;
+  margin-bottom: 6px;
+}
+.present__image {
+  margin-top: 3px;
+}
+.message {
+    display: flex;
+    justify-content: space-between;
+    gap: 155px;
+    margin-top: 160px;
+    margin-left: 18px;
+}
+.message__text {
+   margin-top: 24px;
+   margin-left: 21px;
+}
+.message__title {
+    margin-bottom: 16px;
+}
+.message__desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6f7cb2;
+  width: 445px;
   
+}
+.message__desc2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6f7cb2;
+  width: 445px;
 }
