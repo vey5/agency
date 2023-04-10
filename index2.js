@@ -58,4 +58,6 @@ ladder.showStep()//1*/
  console.log(stringToNumber('605'))
  console.log(stringToNumber('405'))
  console.log(stringToNumber('-7'))*/
+ //задачи с jscamp
+
  
