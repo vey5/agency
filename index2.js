@@ -50,14 +50,14 @@ ladder.showStep()//1*/
  console.log(oddCount(7))*/
  // 5 задача - преобразовать строку в число
  // функцией number(value) преобразовал к числу строку
- /*const stringToNumber = (str) => {
-    const num = Number(str)
-    return num
- }
- console.log(stringToNumber('1234'))
- console.log(stringToNumber('605'))
- console.log(stringToNumber('405'))
- console.log(stringToNumber('-7'))*/
+// const stringToNumber = (str) => {
+//     const num = Number(str)
+//     return num
+//  }
+//  console.log(stringToNumber('1234'))
+//  console.log(stringToNumber('605'))
+//  console.log(stringToNumber('405'))
+//  console.log(stringToNumber('-7'))
  //задачи с jscamp
 
- 
+

@@ -6,64 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landie</title>
     <link rel="stylesheet" href="landie.css" />
-    <!--<link rel="stylesheet" href="reset.css" />-->
+    <link rel="stylesheet" href="reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
-
     <script src="./index2.js"></script>
   </head>
   <body>
-    <header class="heder">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">Home</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">About</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <img src="images/landie/Landie.svg" alt="Logo" />
-      <a class="nav__btn" href="#">Buy Now</a>
-    </header>
-    <section class="section">
-      <div class="mein__conteiner">
-        <div class="conteiner mein">
-          <div class="mein__text">
-            <h1 class="mein__title">
-              Introduce Your Product Quickly & Effectively
-            </h1>
+    <div class="headerWrapper">
+      <header class="container header">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <img src="images/landie/Landie.svg" alt="Logo" />
+        <a class="btn" href="#">Buy Now</a>
+      </header>
+    </div>
+    <main class="container">
+      <section class="contentSection beginner">
+        <div class="mein__text">
+          <h1 class="mein__title">
+            Introduce Your Product Quickly & Effectively
+          </h1>
 
-            <p class="mein__desc">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus
-            </p>
+          <p class="mein__desc">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus
+          </p>
 
-            <p class="mein__desc2">
-              mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-              quis, sem. Nulla consequat massa quis enim.
-            </p>
-            <a class="mein__btn" href="#">Purchase UI Kit</a>
-            <a class="mein__btn2" href="#">Learn More</a>
+          <p class="mein__desc">
+            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim.
+          </p>
+          <div class="actionButtons">
+            <a class="btn" href="#">Purchase UI Kit</a>
+            <a class="btn btnAlternative" href="#">Learn More</a>
           </div>
-          <img class="mein_img" src="images/landie/Group.jpg" alt="mein img" />
         </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="conteiner">
-        <div class="present">
-          <div class="present__text">
-            <h2 class="present__title">Light, Fast & Powerful</h2>
+      </section>
+      <section class="contentSection present">
+        <div class="presentContent">
+          <div class="contentItem present__text">
+            <h2 class="title">Light, Fast & Powerful</h2>
             <p class="present__desc">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -97,108 +95,125 @@
               </li>
             </ul>
           </div>
-          <div class="present__image">
+          <div class="contentItem present__image">
             <img src="images/landie/present.jpg" alt="present" />
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="conteiner">
-        <div class="message">
-          <div class="message__image">
-            <img src="images/landie/message.jpg" alt="message" />
-          </div>
-          <div class="message__text">
-            <h2 class="message__title">Light, Fast & Powerful</h2>
-            <p class="message__desc">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus
-            </p>
-            <p class="message__desc2">
-              mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-              quis, sem. Nulla consequat massa quis enim.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="conteiner">
-        <div class="social">
-          <div class="social__image">
-            <img src="images/landie/social.jpg" alt="Social" />
-          </div>
-          <div class="social__text">
-            <h2 class="social__title">Light, Fast & Powerful</h2>
-            <p class="social__desc">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus
-            </p>
-            <p class="social__desc2">
-              mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-              quis, sem. Nulla consequat massa quis enim.
-            </p>
+      </section>
+      <section class="contentSection">
+        <div class="">
+          <div class="message">
+            <div class="message__image">
+              <img src="images/landie/message.jpg" alt="message" />
+            </div>
+            <div class="message__text">
+              <h2 class="title">Light, Fast & Powerful</h2>
+              <p class="message__desc">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+              </p>
+              <p class="message__desc2">
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="conteiner">
-        <div class="email">
-          <div class="email__image">
-            <img src="images/landie/email.jpg" alt="email" />
+      </section>
+      <section class="contentSection">
+        <div class="">
+          <div class="social">
+            <div class="social__image">
+              <img src="images/landie/social.jpg" alt="Social" />
+            </div>
+            <div class="social__text">
+              <h2 class="title">Light, Fast & Powerful</h2>
+              <p class="social__desc">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+              </p>
+              <p class="social__desc2">
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim.
+              </p>
+            </div>
           </div>
-          <div class="email__text">
-            <h2 class="email__title">Light, Fast & Powerful</h2>
-            <p class="email__desc">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus
-            </p>
-            <p class="email__desc2">
-              mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-              quis, sem. Nulla consequat massa quis enim.
-            </p>
-            <a class="email__btn" href="#">Purchase Now</a>
+        </div>
+      </section>
+      <section class="contentSection">
+        <div class="">
+          <div class="email">
+            <div class="email__image">
+              <img src="images/landie/email.jpg" alt="email" />
+            </div>
+            <div class="email__text">
+              <h2 class="title">Light, Fast & Powerful</h2>
+              <p class="email__desc">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+              </p>
+              <p class="email__desc2">
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim.
+              </p>
+              <a class="email__btn" href="#">Purchase Now</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <div class="conteiner">
-      <div class="price__text">
-        <div class="price__title">
-          <h2>A Price To Suit Everyone</h2>
+      </section>
+      <section class="price">
+        <div class="">
+          <div class="price__text">
+            <div class="price__title">
+              <h2 class="title">A Price To Suit Everyone</h2>
+            </div>
+            <div class="price__desc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+              </p>
+            </div>
+            <div class="price__span">
+              <span>$40</span>
+            </div>
+            <div class="price__desc2">
+              <p>UI Design Kit</p>
+            </div>
+            <div class="price__desc3">
+              <p>See, One price. Simple.</p>
+            </div>
+            <div class="price__btn">
+              <a class="btn" href="#">Purchase Now</a>
+            </div>
+          </div>
         </div>
-        <div class="price__desc">
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus
-          </p>
-        </div>
-        <div class="price__span">
-          <span>$40</span>
-        </div>
-        <div class="price__desc2">
-          <p>UI Design Kit</p>
-        </div>
-        <div class="price__desc3">
-          <p>See, One price. Simple.</p>
-        </div>
-        <div class="price__btn">
-          <a class="pricing__btn" href="#">Purchase Now</a>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="conteiner">
-        <div class="footer__list1">
-          <p>©2020 Yourcompany</p>
+        <div class=""></div>
+      </section>
+    </main>
+    <footer class="container">
+      <div class="footerSection">
+        <div class="footer__text">
+          <p class="footer__desc">©2020 Yourcompany</p>
           <img src="images/landie/Landie.svg" alt="Landie" />
-          <a class="footer__btn" href="#">Purchase now</a>
+          <a class="btnFooter" href="#">Purchase now</a>
+        </div>
+        <div class="footer__list">
+          <div class="a__list">
+            <a class="footer__link" href="#">Home</a>
+            <a class="footer__link" href="#">About</a>
+            <a class="footer__link" href="#">Contact</a>
+          </div>
+          <div class="img__list">
+            <img src="images/landie/facebook.svg" alt="facebook" />
+            <img src="images/landie/likedin.svg" alt="likedin" />
+            <img src="images/landie/twitter.svg" alt="twitter" />
+            <img src="images/landie/youtube.svg" alt="youtube" />
+            <img src="images/landie/Instagram.svg" alt="instagram" />
+          </div>
         </div>
       </div>
     </footer>
