@@ -28,6 +28,14 @@ body {
   color: #111b47;
 }
 
+.desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6f7cb2;
+  width: 100%;
+}
+
 /*  */
 
 .container {
@@ -132,20 +140,6 @@ body {
   margin-bottom: 16px;
 }
 
-.present__desc {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #6f7cb2;
-  width: 539px;
-}
-.present__desc2 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #6f7cb2;
-  width: 539px;
-}
 .present__list {
   display: flex;
   padding-left: 0;
@@ -197,22 +191,6 @@ body {
   margin-bottom: 16px;
 }
 
-.message__desc {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #6f7cb2;
-  width: 445px;
-}
-
-.message__desc2 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #6f7cb2;
-  width: 445px;
-}
-
 .social {
   display: flex;
   justify-content: space-between;
@@ -224,26 +202,7 @@ body {
 .social__text > * {
   margin-bottom: 16px;
   margin-left: -50px;
-}
-
-.social__title {
-  margin-bottom: 16px;
-}
-
-.social__desc {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #6f7cb2;
-  width: 445px;
-}
-
-.social__desc2 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #6f7cb2;
-  width: 445px;
+  
 }
 
 .email {
@@ -263,20 +222,7 @@ body {
   margin-bottom: 16px;
 }
 
-.email__desc {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #6f7cb2;
-  width: 445px;
-}
-
-.email__desc2 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #6f7cb2;
-  width: 445px;
+.emailDesc {
   margin-bottom: 40px;
 }
 
@@ -293,7 +239,15 @@ body {
   display: inline-block;
   width: 150px;
 }
+
 .price {
+  background-color: #f0f0f0;
+}
+
+.priceSection {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
@@ -310,12 +264,7 @@ body {
   margin-bottom: 16px;
 }
 
-.price__desc {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #6f7cb2;
-  width: 600px;
+.priceDesc {
   margin-bottom: 35px;
 }
 
@@ -327,7 +276,7 @@ body {
   letter-spacing: 1px;
 }
 
-.price__desc2 {
+.price__desc1 {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -335,7 +284,7 @@ body {
   margin-bottom: 40px;
 }
 
-.price__desc3 {
+.price__desc2 {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -349,8 +298,14 @@ body {
   margin-bottom: 172px;
 }
 
-.footerSection {
+.footer {
   background-color: #e7ecff;
+}
+
+.footerSection {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
   height: 216px;
 }
 .footer__content {

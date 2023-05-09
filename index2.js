@@ -60,4 +60,9 @@ ladder.showStep()//1*/
 //  console.log(stringToNumber('-7'))
  //задачи с jscamp
 
-
+ let user = {
+    name: "Василий Иванович",
+    age: 35
+  };
+ let son = JSON.parse(JSON.stringify (user))
+  console.log(son)
