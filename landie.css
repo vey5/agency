@@ -18,7 +18,7 @@ body {
   width: fit-content;
   text-align: center;
   padding: 4px 8px;
-  min-width: 160px;
+  min-width: 150px;
   height: 26px;
   border: 1px solid #111b47;
 }
@@ -26,6 +26,21 @@ body {
 .btnAlternative {
   background-color: transparent;
   color: #111b47;
+}
+
+.btnEmail {
+  width: 150px;
+}
+
+.btnPrice {
+  width: 189px;
+}
+
+.btnFooter {
+  width: 109px;
+  min-width: 0;
+  line-height: 18px;
+
 }
 
 .desc {
@@ -49,7 +64,6 @@ body {
   font-weight: 500;
   line-height: 48px;
   color: #091133;
-  width: 540px;
 }
 
 .headerWrapper {
@@ -180,8 +194,6 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 155px;
-  margin-top: 160px;
-  margin-left: 18px;
 }
 
 .message__text > * {
@@ -194,36 +206,21 @@ body {
 .social {
   display: flex;
   justify-content: space-between;
-  gap: 155px;
-  margin-top: 220px;
-  margin-left: 18px;
+  gap: 95px;
 }
 
 .social__text > * {
   margin-bottom: 16px;
-  margin-left: -50px;
-  
 }
 
 .email {
   display: flex;
   justify-content: space-between;
-  gap: 155px;
-  margin-top: 220px;
-  margin-left: 18px;
+  gap: 188px;
 }
 
 .email__text > * {
   margin-bottom: 16px;
-  margin-left: 48px;
-}
-
-.email__title {
-  margin-bottom: 16px;
-}
-
-.emailDesc {
-  margin-bottom: 40px;
 }
 
 .email__btn {
@@ -303,11 +300,9 @@ body {
 }
 
 .footerSection {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 16px;
   height: 216px;
 }
+
 .footer__content {
   margin-top: 61px;
 }
@@ -328,27 +323,12 @@ body {
   color: #939ea4;
 }
 
-.btnFooter{
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #111b47;
-  border-radius: 2px;
-  text-decoration: none;
-  padding: 4px;
-  display: inline-block;
-  width: 109px;
-}
-
 .footer__list {
   display: flex;
   justify-content: space-between;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 32px;
-  
 }
 
 .footer__link {
@@ -357,8 +337,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   text-decoration: none;
-  color: #929ECC;
-  
+  color: #929ecc;
 }
 
 .a__list {
@@ -370,4 +349,22 @@ body {
   display: flex;
   gap: 30px;
 }
+/* media */
 
+@media(max-width: 426px) {
+  .presentContent {
+    flex-direction: column;
+  }
+
+  .message {
+    flex-direction: column;
+  }
+
+  .social {
+    flex-direction: column;
+  }
+
+  .email {
+    flex-direction: column;
+  }
+}
