@@ -40,7 +40,6 @@ body {
   width: 109px;
   min-width: 0;
   line-height: 18px;
-
 }
 
 .desc {
@@ -57,6 +56,7 @@ body {
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 16px;
+  overflow: hidden;
 }
 
 .title {
@@ -105,6 +105,7 @@ body {
 
 .contentItem {
   flex: 1;
+  display: flex;
 }
 
 .mein__text {
@@ -141,14 +142,6 @@ body {
   margin-bottom: 400px;
 }
 
-.present {
-  flex-direction: column;
-}
-
-.presentContent {
-  display: flex;
-}
-
 /*  */
 .present__text > * {
   margin-bottom: 16px;
@@ -174,7 +167,6 @@ body {
   font-weight: 400;
   line-height: 18px;
   color: #5d6970;
-  width: 255px;
 }
 
 .present__span {
@@ -186,27 +178,20 @@ body {
   margin-bottom: 6px;
 }
 
-.present__image {
-  margin-top: 3px;
-}
-
 .message {
   display: flex;
   justify-content: space-between;
-  gap: 155px;
+  gap: 16px;
 }
 
 .message__text > * {
-  margin-bottom: 16px;
-}
-.message__title {
   margin-bottom: 16px;
 }
 
 .social {
   display: flex;
   justify-content: space-between;
-  gap: 95px;
+  gap: 16px;
 }
 
 .social__text > * {
@@ -216,7 +201,7 @@ body {
 .email {
   display: flex;
   justify-content: space-between;
-  gap: 188px;
+  gap: 16px;
 }
 
 .email__text > * {
@@ -351,7 +336,7 @@ body {
 }
 /* media */
 
-@media(max-width: 426px) {
+@media(max-width: 1024px) {
   .presentContent {
     flex-direction: column;
   }
