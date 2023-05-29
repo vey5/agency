@@ -18,7 +18,7 @@
   <body>
     <div class="headerWrapper">
       <header class="container header">
-        <nav class="nav">
+        <nav class="desktopNav">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="#">Home</a>
@@ -31,8 +31,16 @@
             </li>
           </ul>
         </nav>
+        <div class="mobileNav">
+          <img src="images/landie/burger.svg" alt="burger">
+        </div>
         <img src="images/landie/Landie.svg" alt="Logo" />
-        <a class="btn" href="#">Buy Now</a>
+        <div class="desktopBtn">
+          <a class="btn" href="#">Buy Now</a>
+        </div>
+        <div class="mobileBtn">
+          <img src="images/landie/buy now.png" alt="buy now">
+        </div>
       </header>
     </div>
     <main class="container">
@@ -58,7 +66,7 @@
           </div>
         </div>
       </section>
-      <section class="contentSection">
+      <section class="contentSection flexContainer">
         <div class="contentItem">
           <div class="present__text">
             <h2 class="title">Light, Fast & Powerful</h2>
@@ -107,7 +115,7 @@
           </div>
         </div>
         <div class="contentItem">
-          <img src="images/landie/present.jpg" alt="present" />
+          <img class="presentImage" src="images/landie/present.jpg" alt="present" />
         </div>
       </section>
       <section class="contentSection">
@@ -193,7 +201,14 @@
         <div class="footer__text">
           <p class="footer__desc">©2020 Yourcompany</p>
           <img src="images/landie/Landie.svg" alt="Landie" />
-          <a class="btn btnFooter" href="#">Purchase now</a>
+          <div class="desktopBtn">
+            <a class="btn btnFooter" href="#">Purchase now</a>
+          </div>
+          <div class="mobileBtn">
+            <img src="images/landie/buy now.png" alt="purchase now">
+          </div>
+          
+          
         </div>
         <div class="footer__list">
           <div class="a__list">
