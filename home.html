@@ -4,162 +4,223 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A+ studio</title>
-
+    <title>Landie</title>
+    <link rel="stylesheet" href="landie.css" />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&family=Roboto:ital@1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
-    <script src="./index.js"></script>
+    <script src="./index2.js"></script>
   </head>
   <body>
-    <header class="wrapper header header__content">
-      <!-- СВГшку с лого перенести внутрь ссылки из бекграунда -->
-      <!--Перенес сюда свгшку с лого-->
-      <img class="header__logo" src="images/logo.svg" alt="logo" />
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header-item"><a class="header__link" href="#">Home</a></li>
-          <li class="header-item">
-            <a class="header__link" href="#">What We Do</a>
-          </li>
-          <li class="header-item">
-            <a class="header__link" href="#">Service</a>
-          </li>
-          <li class="header-item">
-            <a class="header__link" href="#">Project</a>
-          </li>
-          <li class="header-item"><a class="header__link" href="#">Blog</a></li>
-          <li class="header-item">
-            <a class="header__link" href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="main__container">
-      <div class="wrapper main">
-        <div class="main__text">
-          <h1 class="main__title">A Digital Product Agency</h1>
-          <p class="main__desc">
-            Leading digital agency with solid design and development expertise.
-            We build readymade websites, mobile applications, and elaborate
-            online business services.
-          </p>
-          <a class="main__btn" href="#">Contact Now</a>
+    <div class="headerWrapper">
+      <header class="container header">
+        <nav class="desktopNav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobileNav">
+          <img src="images/landie/burger.svg" alt="burger">
         </div>
-        <img
-          class="main__img"
-          src="images/image 8.jpg"
-          alt="main img"
-          draggable="false"
-        />
-      </div>
+        <img src="images/landie/Landie.svg" alt="Logo" />
+        <div class="desktopBtn">
+          <a class="btn" href="#">Buy Now</a>
+        </div>
+        <div class="mobileBtn">
+          <img src="images/landie/buy now.png" alt="buy now">
+        </div>
+      </header>
     </div>
-    <!--Ширина контента не совпадает с другим контенейрами, min-height мешает?-->
-    <!-- Да вроде все гуд совпадает -->
-    <div class="wrapper container">
-      <div class="company">
-        <div class="company__text">
-          <h1 class="company__title">Our Client</h1>
-          <p class="company__desc">
-            Several selected clients, who already believe in our service.
+    <main class="container">
+      <section class="contentSection beginner">
+        <div class="mein__text">
+          <h1 class="mein__title">
+            Introduce Your Product Quickly & Effectively
+          </h1>
+          <p class="mein__desc">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus
           </p>
-        </div>
-        <div class="company__image">
-          <img src="images/Google Logo.svg" alt="Google" />
-          <img src="images/Airbnb Logo.svg" alt="Airbnb" />
-          <img src="images/Uber Eats Logo.svg" alt="Uber Eats" />
-          <img src="images/Amazon Logo.svg" alt="Amazon" />
-        </div>
-      </div>
-    </div>
-    <!-- У этого блока у класса services надо поменять flex-direction на мобиле чтобы текст был сверху а карточки ущли вниз -->
-    <div class="wrapper main__container">
-      <div class="services">
-        <div class="services__text">
-          <h1 class="service__title">How can we help your Business ?</h1>
-          <p class="service__desc">
-            We build readymade websites, mobile applications,<br />
-            and elaborate online business services.
+          <p class="mein__desc">
+            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim.
           </p>
+          <div class="actionButtons">
+            <a class="btn" href="#">Purchase UI Kit</a>
+            <a class="btn btnAlternative" href="#">Learn More</a>
+          </div>
         </div>
-        <!--Для всех картинок переиспользовал card-->
-        <div class="cards">
-          <div class="card__item">
-            <div class="card">
-              <img class="box" src="images/box-search 1.svg" alt="box-search" />
-              <h2 class="card__title">Business Idea Planning</h2>
-              <p class="card__desc">
-                We present you a proposal and discuss niffty-gritty like
+      </section>
+      <section class="contentSection flexContainer">
+        <div class="contentItem">
+          <div class="present__text">
+            <h2 class="title">Light, Fast & Powerful</h2>
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus
+            </p>
+            <p class="desc">
+              mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+              quis, sem. Nulla consequat massa quis enim.
+            </p>
+            <ul class="present__list">
+              <li class="subDesc">
+                <img
+                  class="present__icon1"
+                  src="images/landie/present icon.svg"
+                  alt="present icon"
+                />
+                <h3 class="subTitle">
+                  Title Goes Here
+                </h3>
+                <p>
+                  Lorem ipsum
+                  dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                  ligula eget dolor.
+                </p>
+              </li>
+
+              <li class="subDesc">
+                <img
+                  class="present__icon2"
+                  src="images/landie/present icon.svg"
+                  alt="present icon"
+                />
+                <h3 class="subTitle">
+                  Title Goes Here
+                </h3>
+                <p>
+                  Lorem ipsum
+                  dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                  ligula eget dolor.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contentItem">
+          <img class="presentImage" src="images/landie/present.jpg" alt="present" />
+        </div>
+      </section>
+      <section class="contentSection">
+              <img src="images/landie/message.jpg" alt="message" />
+              <div class="contentBlock textBlock">
+                  <h2 class="title">Light, Fast & Powerful</h2>
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus
+                  </p>
+                  <p class="desc">
+                    mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                    quis, sem. Nulla consequat massa quis enim.
+                  </p>
+              </div>
+      </section>
+      <section class="contentSection">
+        <img src="images/landie/social.jpg" alt="Social" />
+          <div class="contentBlock textBlock">
+              <h2 class="title">Light, Fast & Powerful</h2>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
               </p>
-            </div>
-            <div class="card">
-              <img
-                class="box"
-                src="images/empty-wallet 1.svg"
-                alt="empty-wallet"
-              />
-              <h2 class="card__title">Financial Planning System</h2>
-              <p class="card__desc">
-                Protocols apart from aengage models, pricing billing
+              <p class="desc">
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim.
               </p>
-            </div>
-            <div class="card">
-              <img class="box" src="images/code-1 1.svg" alt="code" />
-              <h2 class="card__title">Development Website and App</h2>
-              <p class="card__desc">
-                Communication protocols apart from engagement models
+        </div>
+      </section>
+      <section class="contentSection">
+        <img src="images/landie/email.jpg" alt="email" />
+          <div class="contentBlock textBlock">
+              <h2 class="title">Light, Fast & Powerful</h2>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
               </p>
-            </div>
-            <div class="card">
-              <img
-                class="box"
-                src="images/chart-square 1.svg"
-                alt="chart-square"
-              />
-              <h2 class="card__title">Market Analysis Project</h2>
-              <p class="card__desc">
-                Protocols apart from aengage models, pricing billing
+              <p class="desc">
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim.
               </p>
-            </div>
+              <div class="emailButton">
+                <a class="btn btnEmail" href="#">Purchase Now</a>
+              </div>
+        </div>
+      </section>
+    </main>
+    <section class="price">
+      <div class="priceSection">
+        <div class="price__text">
+          <div class="price__title">
+            <h2 class="title">A Price To Suit Everyone</h2>
+          </div>
+          <div class="desc priceDesc">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus
+            </p>
+          </div>
+          <div class="price__span">
+            <span>$40</span>
+          </div>
+          <div class="price__desc1">
+            <p>UI Design Kit</p>
+          </div>
+          <div class="price__desc2">
+            <p>See, One price. Simple.</p>
+          </div>
+          <div class="price__btn">
+            <a class="btn btnPrice" href="#">Purchase Now</a>
           </div>
         </div>
       </div>
-    </div>
-    <!--Завернул все в секцию-->
-    <!-- Тут надо поменять на мобиле flex-direction чтобы у тебя дочерние блоки стали друг под друга и не тянули родителя -->
-    <section class="section">
-      <div class="container">
-        <div class="wrapper">
-          <div class="present">
-            <div class="present__img">
-              <img src="images/present.jpg" alt="present" />
-            </div>
-            <div class="present__text">
-              <h1 class="present__title">
-                Great Digital Product Agency since 2016
-              </h1>
-              <p class="present__desc">
-                Our Business Plan is a written document describing a company's
-                core business activites, Objectives, and how it plans to achieve
-                its goals. Our<br />
-                goal is to provide our client high quality Product with modern
-                idea accordingly their budgets and according thir reuirements.
-              </p>
-            </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footerSection container">
+        <div class="footer__text">
+          <p class="footer__desc">©2020 Yourcompany</p>
+          <img src="images/landie/Landie.svg" alt="Landie" />
+          <div class="desktopBtn">
+            <a class="btn btnFooter" href="#">Purchase now</a>
           </div>
+          <div class="mobileBtn">
+            <img src="images/landie/buy now.png" alt="purchase now">
+          </div>  
         </div>
+        <div class="footer__list">
+          <div class="a__list">
+            <a class="footer__link" href="#">Home</a>
+            <a class="footer__link" href="#">About</a>
+            <a class="footer__link" href="#">Contact</a>
+          </div>
+          <div class="img__list">
+            <img src="images/landie/facebook.svg" alt="facebook" />
+            <img src="images/landie/likedin.svg" alt="likedin" />
+            <img src="images/landie/twitter.svg" alt="twitter" />
+            <img src="images/landie/youtube.svg" alt="youtube" />
+            <img src="images/landie/Instagram.svg" alt="instagram" />
+          </div>
       </div>
-    </section>
-    <section>
-      <div class="wrapper container">
-        <h1 class="title">What our happy client say</h1>
-        <p class="desc">
-          Several selected clients, who already believe in our service.
-        </p>
-      </div>
-    </section>
+        </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A+ studio</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header class="wrapper header header__content">
+      <!-- СВГшку с лого перенести внутрь ссылки из бекграунда -->
+      <!--Перенес сюда свгшку с лого-->
+      <img class="header__logo" src="images/logo.svg" alt="logo" />
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header-item"><a class="header__link" href="#">Home</a></li>
+          <li class="header-item">
+            <a class="header__link" href="#">What We Do</a>
+          </li>
+          <li class="header-item">
+            <a class="header__link" href="#">Service</a>
+          </li>
+          <li class="header-item">
+            <a class="header__link" href="#">Project</a>
+          </li>
+          <li class="header-item"><a class="header__link" href="#">Blog</a></li>
+          <li class="header-item">
+            <a class="header__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main__container">
+      <div class="wrapper main">
+        <div class="main__text">
+          <h1 class="main__title">A Digital Product Agency</h1>
+          <p class="main__desc">
+            Leading digital agency with solid design and development expertise.
+            We build readymade websites, mobile applications, and elaborate
+            online business services.
+          </p>
+          <a class="main__btn" href="#">Contact Now</a>
+        </div>
+        <img
+          class="main__img"
+          src="images/image 8.jpg"
+          alt="main img"
+          draggable="false"
+        />
+      </div>
+    </div>
+    <!--Ширина контента не совпадает с другим контенейрами, min-height мешает?-->
+    <!-- Да вроде все гуд совпадает -->
+    <div class="wrapper container">
+      <div class="company">
+        <div class="company__text">
+          <h1 class="company__title">Our Client</h1>
+          <p class="company__desc">
+            Several selected clients, who already believe in our service.
+          </p>
+        </div>
+        <div class="company__image">
+          <img src="images/Google Logo.svg" alt="Google" />
+          <img src="images/Airbnb Logo.svg" alt="Airbnb" />
+          <img src="images/Uber Eats Logo.svg" alt="Uber Eats" />
+          <img src="images/Amazon Logo.svg" alt="Amazon" />
+        </div>
+      </div>
+    </div>
+    <!-- У этого блока у класса services надо поменять flex-direction на мобиле чтобы текст был сверху а карточки ущли вниз -->
+    <div class="wrapper main__container">
+      <div class="services">
+        <div class="services__text">
+          <h1 class="service__title">How can we help your Business ?</h1>
+          <p class="service__desc">
+            We build readymade websites, mobile applications,<br />
+            and elaborate online business services.
+          </p>
+        </div>
+        <!--Для всех картинок переиспользовал card-->
+        <div class="cards">
+          <div class="card__item">
+            <div class="card">
+              <img class="box" src="images/box-search 1.svg" alt="box-search" />
+              <h2 class="card__title">Business Idea Planning</h2>
+              <p class="card__desc">
+                We present you a proposal and discuss niffty-gritty like
+              </p>
+            </div>
+            <div class="card">
+              <img
+                class="box"
+                src="images/empty-wallet 1.svg"
+                alt="empty-wallet"
+              />
+              <h2 class="card__title">Financial Planning System</h2>
+              <p class="card__desc">
+                Protocols apart from aengage models, pricing billing
+              </p>
+            </div>
+            <div class="card">
+              <img class="box" src="images/code-1 1.svg" alt="code" />
+              <h2 class="card__title">Development Website and App</h2>
+              <p class="card__desc">
+                Communication protocols apart from engagement models
+              </p>
+            </div>
+            <div class="card">
+              <img
+                class="box"
+                src="images/chart-square 1.svg"
+                alt="chart-square"
+              />
+              <h2 class="card__title">Market Analysis Project</h2>
+              <p class="card__desc">
+                Protocols apart from aengage models, pricing billing
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Завернул все в секцию-->
+    <!-- Тут надо поменять на мобиле flex-direction чтобы у тебя дочерние блоки стали друг под друга и не тянули родителя -->
+    <section class="section">
+      <div class="container">
+        <div class="wrapper">
+          <div class="present">
+            <div class="present__img">
+              <img src="images/present.jpg" alt="present" />
+            </div>
+            <div class="present__text">
+              <h1 class="present__title">
+                Great Digital Product Agency since 2016
+              </h1>
+              <p class="present__desc">
+                Our Business Plan is a written document describing a company's
+                core business activites, Objectives, and how it plans to achieve
+                its goals. Our<br />
+                goal is to provide our client high quality Product with modern
+                idea accordingly their budgets and according thir reuirements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrapper container">
+        <h1 class="title">What our happy client say</h1>
+        <p class="desc">
+          Several selected clients, who already believe in our service.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
