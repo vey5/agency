@@ -14,10 +14,39 @@
       rel="stylesheet"
     />
   </head>
+  <div class="headerWrapper">
+    <header class="container header">
+      <nav class="desktopNav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="home.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobileNav">
+        <img src="images/landie/burger.svg" alt="burger">
+      </div>
+      <img src="images/landie/Landie.svg" alt="Logo" />
+      <div class="desktopBtn">
+        <a class="btn" href="#">Buy Now</a>
+      </div>
+      <div class="mobileBtn">
+        <img src="images/landie/buy now.png" alt="buy now">
+      </div>
+    </header>
+  </div>
   <body>
     <main class="container">
       <div class="contentItem">
-        <img class="aboutImg" src="images/landie/about.png" alt="about" />
+        <div class="aboutImage">
+          <img class="aboutImg" src="images/landie/about.png" alt="about" />
+        </div>
         <div class="contentBlock">
           <div class="aboutText">
             <h2 class="title">Light, Fast & Powerful</h2>
@@ -60,12 +89,11 @@
             </ul>
             <ul class="aboutList">
               <li class="subDesc">
-                <div class="aboutImg">
-                  <img
-                    src="images/landie/present icon.svg"
-                    alt="present icon"
-                  />
-                </div>
+                <img
+                  class="aboutIcon"
+                  src="images/landie/present icon.svg"
+                  alt="present icon"
+                />
                 <h3 class="subTitle">Title Goes Here</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -89,5 +117,33 @@
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <div class="footerSection container">
+        <div class="footer__text">
+          <p class="footer__desc">©2020 Yourcompany</p>
+          <img src="images/landie/Landie.svg" alt="Landie" />
+          <div class="desktopBtn">
+            <a class="btn btnFooter" href="#">Purchase now</a>
+          </div>
+          <div class="mobileBtn">
+            <img src="images/landie/buy now.png" alt="purchase now">
+          </div>  
+        </div>
+        <div class="footer__list">
+          <div class="a__list">
+            <a class="footer__link" href="#">Home</a>
+            <a class="footer__link" href="#">About</a>
+            <a class="footer__link" href="#">Contact</a>
+          </div>
+          <div class="img__list">
+            <img src="images/landie/facebook.svg" alt="facebook" />
+            <img src="images/landie/likedin.svg" alt="likedin" />
+            <img src="images/landie/twitter.svg" alt="twitter" />
+            <img src="images/landie/youtube.svg" alt="youtube" />
+            <img src="images/landie/Instagram.svg" alt="instagram" />
+          </div>
+      </div>
+        </div>
+    </footer>
   </body>
 </html>
