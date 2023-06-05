@@ -111,12 +111,12 @@ console.log(arrow(arr))*/
 // сначала засунул 1 элем в конец массива, затем удалил 1 элемент с начала
 //2 вариант
 // тут вывелась последняя цифра массива
- /*const findZalupa = (dew2) => {
- const biba = dew2.splice(dew2.length -1, 1, dew2[0]); dew2.shift();
- return biba
+ /*const findRes = (dew2) => {
+ const adv = dew2.splice(dew2.length -1, 1, dew2[0]); dew2.shift();
+ return adv
  }
  dew2 = [1,2,3,4,5]
- const result = findZalupa([1,2,3,4,5])
+ const result = findRes([1,2,3,4,5])
  console.log(result)*/
 
 //7 задача
