@@ -1,5 +1,9 @@
 /* main */
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -120,6 +124,10 @@
   
 }
 
+.content_Block {
+  max-width: 445px;
+}
+
 .text_Block > * {
   display: flex;
   flex-direction: column;
@@ -234,6 +242,10 @@
   .flex_Container {
     flex-direction: column-reverse;
   }
+
+  .content_Block {
+    max-width: 100% ;
+  }
 }
 
 @media (max-width: 414px) {
@@ -265,4 +277,5 @@
   .img_list {
     gap: 18px;
   }
+
 }

@@ -1,15 +1,10 @@
 body {
-  font-family: "Roboto", sans-serif;
   background-image: url("images/landie/diz.png");
   background-repeat: no-repeat;
   background-position: right top;
 }
 
 /* base styles */
-
-.content_Block {
-  max-width: 445px;
-}
 
 /*  */
 
@@ -173,4 +168,5 @@ body {
   .img_list {
     gap: 18px;
   }
+
 }
